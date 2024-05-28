@@ -1,0 +1,18 @@
+PUSH 3
+mem[0] = POP
+PUSH 1
+PUSH mem[0]
+ADD
+PUSH 2
+MUL
+mem[1] = POP
+PUSH 1
+PUSH mem[1]
+SUB
+PUSH 3
+MUL
+mem[2] = POP
+DEL = mem[1]
+DEL = mem[0]
+PUSH mem[2]
+RET = POP
